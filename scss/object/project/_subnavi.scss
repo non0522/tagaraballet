@@ -1,5 +1,14 @@
 .p-subnav {
     ul {
         display: flex;
+        justify-content: space-evenly;
+        li {
+            font-size: 14px;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+            span {
+                font-size: 12px;
+            }
+        }
     }
 }

@@ -1,0 +1,16 @@
+.c-card {
+    display: flex;
+    img {
+        width: 30%;
+        box-shadow: 2px 2px 8px 0px #777777;
+    }
+    &__content {
+        margin-left: 16px;
+        &__date {
+            margin-bottom: 10px;
+        }
+        &__title {
+            margin-bottom: 10px;
+        }
+    }
+}
