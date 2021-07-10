@@ -1,0 +1,12 @@
+.c-title--heading {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin-left: 2rem;
+    text-indent: -2rem;
+    line-height: 1.5;
+    z-index: 1;
+    span {
+        font-size: 18px;
+    }
+}

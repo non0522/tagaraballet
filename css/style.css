@@ -60,4 +60,92 @@ h3 {
     font-size: 40px;
   }
 }
+
+.c-title--heading {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin-left: 2rem;
+  text-indent: -2rem;
+  line-height: 1.5;
+  z-index: 1;
+}
+
+.c-title--heading span {
+  font-size: 18px;
+}
+
+.c-shadow {
+  background-color: #fff;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  border-radius: 50%;
+}
+
+.p-top {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.p-hero {
+  height: 35vh;
+  width: calc(100% + 40px);
+  position: relative;
+  left: -20px;
+  background-image: url(/img/top-bg.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 520px) {
+  .p-hero {
+    height: 55vh;
+    width: calc(100% + 80px);
+    left: -40px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .p-hero {
+    height: 500px;
+    width: calc(100% + 120px);
+    left: -60px;
+  }
+}
+
+.p-subnav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.u-m-base {
+  margin: 10px 20px 0;
+}
+
+@media screen and (min-width: 520px) {
+  .u-m-base {
+    margin: 20px 40px 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .u-m-base {
+    margin: 20px 60px 0;
+  }
+}
+
+.u-mb > * {
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=style.css.map */

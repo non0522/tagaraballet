@@ -1,0 +1,18 @@
+// .u-mb-s margin-bottom: 20px /  / ;
+// .u-mb-m margin-bottom: 30px /  / ;
+// .u-mb-m margin-bottom: 30px /  / ;
+// .u-mb-ex margin-bottom: 50px /  / ;
+// .u-mtb-s margin: 20px 0 /;
+
+.u-m-base {
+    margin: 10px 20px 0;
+    @include responsive(tab) {
+        margin: 20px 40px 0;
+    }
+    @include responsive(pc) {
+        margin: 20px 60px 0;
+    }
+}
+.u-mb > * {
+    margin-bottom: 50px;
+}
