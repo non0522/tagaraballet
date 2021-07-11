@@ -1,16 +1,23 @@
 .c-card {
     display: flex;
+    max-height: 100px;
     img {
         width: 30%;
-        box-shadow: 2px 2px 8px 0px #777777;
+        box-shadow: 3px 3px 7px 0px #777777;
     }
     &__content {
         margin-left: 16px;
+        overflow: hidden;
+        margin-bottom: 8px;
+        
         &__date {
             margin-bottom: 10px;
         }
         &__title {
             margin-bottom: 10px;
+        }
+        &__text {
+            font-size: 12px;
         }
     }
 }

@@ -1,8 +1,16 @@
 .c-button {
+    // padding: 20px;
     text-align: center;
-    width: 100%;
+    // width: 100%;
+    position: relative;
+
     a {
-        padding: 10px;
-        background: yellow;
+        font-weight: bold;
+        padding-right: 10px;
+        position: relative;
+        transition: .5s;
+        &:hover {
+            color: #A99D4D;
+        }
     }
 }
