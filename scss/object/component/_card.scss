@@ -1,12 +1,17 @@
 .c-card {
     display: flex;
     max-height: 100px;
+    transition: .5s;
     @include responsive(tab) {
         max-height: 140px;
     }
+    &:hover {
+        background: #f7f7f7;
+    }
     img {
         width: 30%;
-        box-shadow: 3px 3px 7px 0px #777777;
+        box-shadow: 3px 3px 7px 0px $color-gray--border;
+        object-fit: contain;
         @include responsive(tab) {
             width: 35%;
         }

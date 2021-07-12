@@ -1,0 +1,10 @@
+.p-page-description {
+    @include responsive(tab) {
+        &__title {
+            font-size: 32px;
+        }
+        &__text {
+            font-size:16px;
+        }
+    }
+}

@@ -17,6 +17,15 @@
         width: calc(100% + 120px);
         left: -60px;
     }
+}
 
-
+.p-hero--archive {
+    background-image: url(/img/top-bar.jpg);
+    height: 25vh;
+    @include responsive(tab) {
+        height: 55vh;
+    }
+    @include responsive(pc) {
+        height: 500px;
+    }
 }

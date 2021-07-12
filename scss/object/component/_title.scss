@@ -13,11 +13,17 @@
     text-indent: -2rem;
     line-height: 1.5;
     z-index: 1;
+    @include responsive(tab) {
+        left: 40px;
+    }
     span {
         font-size: 18px;
     }
+    &--archive{
+        color: $color-white--text;
+    }
 }
-.c-title--section {
+.c-title--article {
     display: inline-block;
     border-bottom: solid 2px $color-gray--footer;
     padding-bottom: 10px;

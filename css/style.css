@@ -80,31 +80,24 @@ h3 {
 }
 
 @media screen and (min-width: 1025px) {
-  .l-main {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 30% 70%;
-        grid-template-columns: 30% 70%;
-    -ms-grid-rows: 600px 1fr;
-        grid-template-rows: 600px 1fr;
-    gap: 0px 40px;
-        grid-template-areas: "top top" "aside main";
+  .p-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 40px;
   }
-  .l-main .p-news {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: top;
-  }
-  .l-main .p-main-sections {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: main;
-  }
-  .l-main .l-aside {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: aside;
+}
+
+@media screen and (min-width: 1025px) {
+  .p-main__contents {
+    width: 70%;
   }
 }
 
@@ -130,6 +123,7 @@ h3 {
 
 @media screen and (min-width: 1025px) {
   .l-aside {
+    width: 30%;
     background: #ffffff;
     color: #363636;
     height: 100%;
@@ -165,11 +159,21 @@ h3 {
   z-index: 1;
 }
 
+@media screen and (min-width: 520px) {
+  .c-title--heading {
+    left: 40px;
+  }
+}
+
 .c-title--heading span {
   font-size: 18px;
 }
 
-.c-title--section {
+.c-title--heading--archive {
+  color: #ffffff;
+}
+
+.c-title--article {
   display: inline-block;
   border-bottom: solid 2px #707070;
   padding-bottom: 10px;
@@ -177,18 +181,18 @@ h3 {
 }
 
 @media screen and (min-width: 520px) {
-  .c-title--section {
+  .c-title--article {
     margin-bottom: 40px;
   }
 }
 
-.c-title--section span {
+.c-title--article span {
   font-size: 16px;
   padding-left: 20px;
 }
 
 @media screen and (min-width: 520px) {
-  .c-title--section span {
+  .c-title--article span {
     font-size: 20px;
   }
 }
@@ -278,6 +282,8 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   max-height: 100px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media screen and (min-width: 520px) {
@@ -286,10 +292,16 @@ h3 {
   }
 }
 
+.c-card:hover {
+  background: #f7f7f7;
+}
+
 .c-card img {
   width: 30%;
-  -webkit-box-shadow: 3px 3px 7px 0px #777777;
-          box-shadow: 3px 3px 7px 0px #777777;
+  -webkit-box-shadow: 3px 3px 7px 0px #838383;
+          box-shadow: 3px 3px 7px 0px #838383;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media screen and (min-width: 520px) {
@@ -450,6 +462,23 @@ h3 {
   }
 }
 
+.p-hero--archive {
+  background-image: url(/img/top-bar.jpg);
+  height: 25vh;
+}
+
+@media screen and (min-width: 520px) {
+  .p-hero--archive {
+    height: 55vh;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .p-hero--archive {
+    height: 500px;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .p-subnav {
     display: none;
@@ -558,13 +587,13 @@ h3 {
   }
 }
 
-.p-section__content {
+.p-article__content {
   width: 100%;
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 520px) {
-  .p-section__content {
+  .p-article__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -572,7 +601,7 @@ h3 {
   }
 }
 
-.p-section__content img {
+.p-article__content img {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -582,14 +611,14 @@ h3 {
 }
 
 @media screen and (min-width: 520px) {
-  .p-section__content img {
+  .p-article__content img {
     width: 50%;
     height: inherit;
   }
 }
 
 @media screen and (min-width: 520px) {
-  .p-section__content p {
+  .p-article__content p {
     width: 50%;
     padding-left: 20px;
     overflow: hidden;
@@ -733,6 +762,35 @@ h3 {
   }
 }
 
+@media screen and (min-width: 520px) {
+  .p-page-description__title {
+    font-size: 32px;
+  }
+  .p-page-description__text {
+    font-size: 16px;
+  }
+}
+
+.p-archive__list {
+  margin-bottom: 50px;
+}
+
+.p-archive__list article {
+  max-height: 200px;
+  margin-bottom: 40px;
+}
+
+.p-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .u-m-base {
   margin: 40px 20px;
 }
@@ -754,7 +812,7 @@ h3 {
 }
 
 .u-mb-s > * {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 @media screen and (min-width: 520px) {

@@ -15,6 +15,7 @@
     }
 
     @include responsive(pc) {
+      width: 30%;
         background: $color-white--text;
         color: #363636;
         height: 100%;
