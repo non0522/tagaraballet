@@ -5,9 +5,10 @@
     border: $color-white--text 1px solid;
     @include responsive(pc) {
         display: flex;
-        margin-bottom: 0;
+        margin-bottom: 30px;
         line-height: 1;
         border: $color-black--border 1px solid;
+        border-radius: 10px;
     }    
     &__box {
         width: 74%;
@@ -15,7 +16,8 @@
         @include responsive(pc) {
             width: auto;
             font-size: 16px;
-            background-color: skyblue;
+            padding: 10px;
+
         }
 
     }
@@ -27,7 +29,7 @@
         box-sizing: inherit;
         // background-color: gray;
         @include responsive(pc) {
-            background-color: black;
+            // background-color: black;
         }
     }
 }

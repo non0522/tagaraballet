@@ -1,5 +1,8 @@
 .c-title--top {
     padding: 10px 20px;
+    @include responsive(tab) {
+        padding: 20px 40px;
+    }
 }
 
 .c-title--heading {
@@ -19,12 +22,16 @@
     border-bottom: solid 2px $color-gray--footer;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    @include responsive(tab) {
+        margin-bottom: 40px;
+    }
     span {
         font-size: 16px;
         padding-left: 20px;
-        // padding-bottom: 10px;
-        // border-bottom: solid 10px $color-white--text;
-    }
+        @include responsive(tab) {
+            font-size: 20px;
+        }
+        }
 }
 .c-title--footer {
     font-size: 24px;
@@ -32,6 +39,9 @@
     font-weight: normal;
     padding: 20px;
     position: relative;
+    @include responsive(tab) {
+        font-size: 30px;
+    }
     &::after{
         content:"";
         display:block;

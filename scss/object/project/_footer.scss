@@ -10,6 +10,9 @@
         text-align: left;
         p {
             font-size: 10px;
+            @include responsive(tab) {
+                font-size: 12px;
+            }
         }
     }
 }

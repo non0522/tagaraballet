@@ -18,4 +18,12 @@
 }
 .u-mb-s > * {
     margin-bottom: 50px;
+    @include responsive (tab) {
+        margin-bottom: 100px;
+    }
+}
+.u-mb-s:last-of-type {
+    @include responsive(pc) {
+        margin-bottom: 0;
+    }
 }

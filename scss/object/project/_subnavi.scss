@@ -1,7 +1,13 @@
 .p-subnav {
+    @include responsive(pc) {
+        display: none;
+    }
     ul {
         display: flex;
         justify-content: space-between;
+        @include responsive(tab) {
+            justify-content: flex-start;
+        }
         li {
             font-size: 14px;
             border-bottom: 1px solid #707070;
@@ -9,6 +15,10 @@
             position: relative;
             display: inline-block;
             transition: .5s;
+            @include responsive(tab) {
+                margin-right: 30px;
+                font-size: 18px;
+            }
             &:hover {
                 color: #A99D4D;
             }
@@ -30,6 +40,9 @@
             }
             span {
                 font-size: 12px;
+                @include responsive(tab) {
+                    font-size: 14px;
+                }
             }
         }
     }

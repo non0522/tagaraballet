@@ -1,9 +1,15 @@
 .c-card {
     display: flex;
     max-height: 100px;
+    @include responsive(tab) {
+        max-height: 140px;
+    }
     img {
         width: 30%;
         box-shadow: 3px 3px 7px 0px #777777;
+        @include responsive(tab) {
+            width: 35%;
+        }
     }
     &__content {
         margin-left: 16px;
@@ -12,12 +18,21 @@
         
         &__date {
             margin-bottom: 10px;
+            @include responsive(tab) {
+                font-size: 14px;
+            }
         }
         &__title {
             margin-bottom: 10px;
+            @include responsive(tab) {
+                font-size: 18px;
+            }
         }
         &__text {
             font-size: 12px;
+            @include responsive(tab) {
+                font-size: 14px;
+            }
         }
     }
 }
