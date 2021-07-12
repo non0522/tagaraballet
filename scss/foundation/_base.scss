@@ -43,9 +43,9 @@ h1, h2{
   @include responsive(tab) {
     font-size: 40px;
   }
-  @include responsive(pc) {
-    font-size: 64px;
-  }
+  // @include responsive(pc) {
+  //   font-size: 64px;
+  // }
 }
 
 h3 {
