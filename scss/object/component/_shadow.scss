@@ -1,11 +1,20 @@
 .c-shadow {
-    background-color: #fff;
-    width: 300px;
-    height: 100px;
+    background-image: url(/img/bg-shadow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-    bottom: 0;
-    left: -20px;
-    border-radius: 50%;
-    opacity: .5;
-    
+    width: 400px;
+    height: 200px;
+    top: 70px;
+    left: -80px;
+    @include responsive(tab) {
+        width: 600px;
+        height: 300px;
+        top: 130px;
+        left: -120px;
+    }
+    @include responsive(pc) {
+        top: 250px;
+        left: -120px;
+    }
 }
