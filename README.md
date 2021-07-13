@@ -4,6 +4,9 @@
 
 １、目的 
 現HP及びブログから移行のため、端的かつデザイン性のあるサイトの新規構築。
+現サイト
+https://tagaraballetcircle.blogspot.com/
+https://tagaraballetcircle.simdif.com/
 
 ２、作成内容
 ・サイトデザインの作成 (2021.7.5 ~ 2021.7.9)
