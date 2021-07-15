@@ -819,6 +819,16 @@ h3 {
   margin: 0 auto;
 }
 
+.p-single > * {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 520px) {
+  .p-single > * {
+    margin-bottom: 40px;
+  }
+}
+
 .u-m-base {
   margin: 40px 20px;
 }
